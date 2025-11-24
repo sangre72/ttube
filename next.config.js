@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   // 전자정부 프레임워크 호환성을 위한 설정
   webpack: (config, { isServer }) => {
     // jQuery 지원

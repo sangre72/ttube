@@ -21,15 +21,15 @@ WHISPER_MODEL_DESCRIPTIONS = {
     "large": "최고 정확도지만 매우 느림 (1550MB)"
 }
 
-# GPU 설정 - CPU 모드로 설정
-ENABLE_GPU = False  # GPU 사용 여부 (CPU 모드)
-GPU_DEVICE = "cpu"  # cpu로 고정
+# GPU 설정 - Metal GPU 활성화
+ENABLE_GPU = True  # GPU 사용 여부 (Metal GPU 활성화)
+GPU_DEVICE = "mps"  # Apple Silicon Metal GPU
 MPS_FALLBACK_TO_CPU = True  # MPS 오류 시 CPU로 폴백
 # Apple Silicon Mac에서 MPS 안정성 문제로 인해 기본적으로 CPU 사용
 USE_MPS_ON_APPLE_SILICON = False  # Apple Silicon에서 MPS 사용 여부
 
-# Whisper.cpp 설정 (Apple Silicon 최적화) - CPU 모드로 설정
-USE_WHISPER_CPP = False  # whisper.cpp 사용 여부 (CPU 모드로 비활성화)
+# Whisper.cpp 설정 (Apple Silicon 최적화) - Metal GPU 활성화
+USE_WHISPER_CPP = True  # whisper.cpp 사용 여부 (Metal GPU 활성화)
 WHISPER_CPP_PATH = "./whisper.cpp"  # whisper.cpp 설치 경로
 WHISPER_CPP_MODELS_PATH = "./whisper.cpp/models"  # 모델 경로
 
