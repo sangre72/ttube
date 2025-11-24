@@ -1,0 +1,80 @@
+# Environment variables
+.env
+.env.local
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Testing
+coverage/
+.nyc_output
+
+# Production
+build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Local IDE settings (optional - 필요시 주석 해제)
+# .vscode/
+# .idea/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Python Server specific
+python-server/.env
+python-server/venv/
+python-server/.venv/
+python-server/__pycache__/
+python-server/*.pyc
+python-server/.uv/
+
+# Whisper models (large files)
+python-server/whisper.cpp/models/*.bin
+
+# Cache and temporary files
+*.log
+*.cache
+.cache/
+temp/
+tmp/
